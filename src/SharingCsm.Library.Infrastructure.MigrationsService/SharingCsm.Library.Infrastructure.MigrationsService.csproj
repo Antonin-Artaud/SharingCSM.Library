@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-SharingCsm.Library.Infrastructure.MigrationsService-ce75cb75-1c13-4ea5-b6bf-270287c2405e</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\host\SharingCsm.Library.ServiceDefaults\SharingCsm.Library.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\SharingCsm.Library.Infrastructure\SharingCsm.Library.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

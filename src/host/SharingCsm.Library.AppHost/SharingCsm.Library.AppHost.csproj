@@ -1,0 +1,20 @@
+﻿<Project Sdk="Aspire.AppHost.Sdk/13.2.1">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>94b82aad-0040-49d6-8326-b6cbcfd5e6c9</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="13.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\SharingCsm.Library.API\SharingCsm.Library.Api.csproj" />
+    <ProjectReference Include="..\..\SharingCsm.Library.Infrastructure.MigrationsService\SharingCsm.Library.Infrastructure.MigrationsService.csproj" />
+  </ItemGroup>
+
+</Project>

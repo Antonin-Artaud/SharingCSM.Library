@@ -1,0 +1,5 @@
+{
+  "appHost": {
+    "path": "src/host/SharingCsm.Library.AppHost/SharingCsm.Library.AppHost.csproj"
+  }
+}

@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SharingCsm.Library.API/SharingCsm.Library.Api.csproj" />
+    <Project Path="src/SharingCsm.Library.Application/SharingCsm.Library.Application.csproj" />
+    <Project Path="src/SharingCsm.Library.Domain/SharingCsm.Library.Domain.csproj" />
+    <Project Path="src/SharingCsm.Library.Infrastructure.MigrationsService/SharingCsm.Library.Infrastructure.MigrationsService.csproj" />
+    <Project Path="src/SharingCsm.Library.Infrastructure/SharingCsm.Library.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/host/">
+    <Project Path="src/host/SharingCsm.Library.AppHost/SharingCsm.Library.AppHost.csproj" />
+    <Project Path="src/host/SharingCsm.Library.ServiceDefaults/SharingCsm.Library.ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SharingCsm.Library.Benchmarks/SharingCsm.Library.Benchmarks.csproj" Id="bc73530a-47c9-4fb5-bb53-9159d9c52f7e" />
+  </Folder>
+</Solution>

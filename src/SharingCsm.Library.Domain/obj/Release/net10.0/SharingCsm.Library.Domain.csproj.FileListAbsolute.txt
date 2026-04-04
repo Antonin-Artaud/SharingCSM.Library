@@ -1,0 +1,11 @@
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\SharingCsm.Library.Domain\bin\Release\net10.0\SharingCsm.Library.Domain.deps.json
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\SharingCsm.Library.Domain\bin\Release\net10.0\SharingCsm.Library.Domain.dll
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\SharingCsm.Library.Domain\bin\Release\net10.0\SharingCsm.Library.Domain.pdb
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\SharingCsm.Library.Domain\obj\Release\net10.0\SharingCsm.Library.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\SharingCsm.Library.Domain\obj\Release\net10.0\SharingCsm.Library.Domain.AssemblyInfoInputs.cache
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\SharingCsm.Library.Domain\obj\Release\net10.0\SharingCsm.Library.Domain.AssemblyInfo.cs
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\SharingCsm.Library.Domain\obj\Release\net10.0\SharingCsm.Library.Domain.csproj.CoreCompileInputs.cache
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\SharingCsm.Library.Domain\obj\Release\net10.0\SharingCsm.Library.Domain.dll
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\SharingCsm.Library.Domain\obj\Release\net10.0\refint\SharingCsm.Library.Domain.dll
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\SharingCsm.Library.Domain\obj\Release\net10.0\SharingCsm.Library.Domain.pdb
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\SharingCsm.Library.Domain\obj\Release\net10.0\ref\SharingCsm.Library.Domain.dll

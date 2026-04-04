@@ -1,0 +1,6 @@
+@SharingCsm.Library.API_HostAddress = https://library-api-sharingcsm_library.dev.localhost:7075/
+
+Post {{SharingCsm.Library.API_HostAddress}}/Loans/
+Accept: application/json
+
+###
