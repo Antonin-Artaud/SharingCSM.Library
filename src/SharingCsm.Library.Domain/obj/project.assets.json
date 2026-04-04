@@ -8,33 +8,25 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\aartaud\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/antoninartaud/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Domain\\SharingCsm.Library.Domain.csproj",
+      "projectUniqueName": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Domain/SharingCsm.Library.Domain.csproj",
       "projectName": "SharingCsm.Library.Domain",
-      "projectPath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Domain\\SharingCsm.Library.Domain.csproj",
-      "packagesPath": "C:\\Users\\aartaud\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Domain\\obj\\",
+      "projectPath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Domain/SharingCsm.Library.Domain.csproj",
+      "packagesPath": "/Users/antoninartaud/.nuget/packages/",
+      "outputPath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Domain/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\aartaud\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/antoninartaud/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Users\\aartaud\\source\\repos\\Mnca\\Librairies\\framework\\src\\Mnca.Abp.Rhm\\bin\\Debug": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -53,7 +45,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net10.0": {
@@ -74,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

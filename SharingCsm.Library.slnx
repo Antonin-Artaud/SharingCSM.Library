@@ -11,6 +11,10 @@
     <Project Path="src/host/SharingCsm.Library.ServiceDefaults/SharingCsm.Library.ServiceDefaults.csproj" />
   </Folder>
   <Folder Name="/tests/">
+    <Project Path="tests/SharingCSM.Library.Domain.Tests/SharingCSM.Library.Domain.Tests.csproj" />
+    <Project Path="tests/SharingCSM.Library.IntegrationTests/SharingCSM.Library.IntegrationTests.csproj" />
+  </Folder>
+  <Folder Name="/tests/tools/">
     <Project Path="tests/SharingCsm.Library.Benchmarks/SharingCsm.Library.Benchmarks.csproj" Id="bc73530a-47c9-4fb5-bb53-9159d9c52f7e" />
   </Folder>
 </Solution>

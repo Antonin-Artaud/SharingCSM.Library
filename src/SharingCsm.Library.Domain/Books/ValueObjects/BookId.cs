@@ -10,13 +10,10 @@ public sealed record BookId
 
 	public static BookId Create(Guid id)
 	{
-		if (id == Guid.Empty)
-		{
-			throw new DomainException("BookId cannot be empty.");
-		}
-
-		return new BookId(id);
+		return id == Guid.Empty ? throw new DomainException("BookId cannot be empty.") : new BookId(id);
 	}
 
 	public static implicit operator Guid(BookId bookId) => bookId.Value;
+	
+	public override string ToString() => Value.ToString();
 }

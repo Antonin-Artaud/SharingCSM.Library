@@ -3,6 +3,7 @@ using SharingCsm.Library.Domain.Books.Entities;
 using SharingCsm.Library.Domain.Books.Exceptions;
 using SharingCsm.Library.Domain.Books.Repositories;
 using SharingCsm.Library.Domain.Books.Specifications;
+using SharingCsm.Library.Domain.Books.ValueObjects;
 
 namespace SharingCsm.Library.Application.Books.Handlers;
 
@@ -19,10 +20,11 @@ public class BorrowBookCommandHandler : ICommandHandler<BorrowBookCommand, Guid>
 
 	public async ValueTask<Guid> Handle(BorrowBookCommand request, CancellationToken cancellationToken)
 	{
-		var isAvaibleSpec = new BookAvailableSpecification(request.BookId);
+		var bookId = BookId.Create(request.BookId);
+		var isAvailableSpec = new BookAvailableSpecification(bookId);
 
-		var book = await _bookRepository.GetBySpecificationAsync(isAvaibleSpec, cancellationToken)
-			?? throw new BookNotAvailableException(request.BookId);
+		var book = await _bookRepository.GetBySpecificationAsync(isAvailableSpec, cancellationToken)
+			?? throw new BookNotAvailableException(bookId);
 
 		var loan = book.Borrow(request.UserId, 14);
 

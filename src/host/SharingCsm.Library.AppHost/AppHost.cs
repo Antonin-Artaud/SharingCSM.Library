@@ -2,7 +2,7 @@ using Projects;
 
 namespace SharingCsm.Library.AppHost;
 
-public static class Program
+public abstract class Program
 {
 	private static async Task Main(string[] args)
 	{

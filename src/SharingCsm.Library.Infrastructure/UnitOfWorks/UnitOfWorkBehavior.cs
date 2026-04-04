@@ -5,7 +5,7 @@ using System.Diagnostics;
 namespace SharingCsm.Library.Infrastructure.UnitOfWorks;
 
 public sealed class UnitOfWorkBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
-	where TRequest : ICommand, ICommand<TResponse>
+	where TRequest : IBaseCommand
 {
 	private readonly ILogger<UnitOfWorkBehavior<TRequest, TResponse>> _logger;
 	private readonly UnitOfWork _unitOfWork;

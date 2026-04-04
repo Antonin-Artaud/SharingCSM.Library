@@ -7,7 +7,7 @@ namespace SharingCsm.Library.Domain.Books.Entities;
 
 public class Book : IEntity
 {
-	public BookId Id { get; set; }
+	public BookId Id { get; init; }
 	public string Title { get; private set; }
 	public bool IsAvailable { get; private set; }
 	public BookCategory Category { get; private set; }

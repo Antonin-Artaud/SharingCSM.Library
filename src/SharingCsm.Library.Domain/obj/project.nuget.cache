@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yk9zcHN7B7Q=",
+  "dgSpecHash": "En7Wa3xqmO4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Domain\\SharingCsm.Library.Domain.csproj",
+  "projectFilePath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Domain/SharingCsm.Library.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

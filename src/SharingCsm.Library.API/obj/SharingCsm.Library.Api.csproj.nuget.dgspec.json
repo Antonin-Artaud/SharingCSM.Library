@@ -1,33 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.API\\SharingCsm.Library.Api.csproj": {}
+    "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.API/SharingCsm.Library.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\host\\SharingCsm.Library.ServiceDefaults\\SharingCsm.Library.ServiceDefaults.csproj": {
+    "/Users/antoninartaud/Dev/SharingCSM.Library/src/host/SharingCsm.Library.ServiceDefaults/SharingCsm.Library.ServiceDefaults.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\host\\SharingCsm.Library.ServiceDefaults\\SharingCsm.Library.ServiceDefaults.csproj",
+        "projectUniqueName": "/Users/antoninartaud/Dev/SharingCSM.Library/src/host/SharingCsm.Library.ServiceDefaults/SharingCsm.Library.ServiceDefaults.csproj",
         "projectName": "SharingCsm.Library.ServiceDefaults",
-        "projectPath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\host\\SharingCsm.Library.ServiceDefaults\\SharingCsm.Library.ServiceDefaults.csproj",
-        "packagesPath": "C:\\Users\\aartaud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\host\\SharingCsm.Library.ServiceDefaults\\obj\\",
+        "projectPath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/host/SharingCsm.Library.ServiceDefaults/SharingCsm.Library.ServiceDefaults.csproj",
+        "packagesPath": "/Users/antoninartaud/.nuget/packages/",
+        "outputPath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/host/SharingCsm.Library.ServiceDefaults/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\aartaud\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/antoninartaud/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\aartaud\\source\\repos\\Mnca\\Librairies\\framework\\src\\Mnca.Abp.Rhm\\bin\\Debug": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,7 +39,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
@@ -100,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -518,44 +511,37 @@
         }
       }
     },
-    "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.API\\SharingCsm.Library.Api.csproj": {
+    "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.API/SharingCsm.Library.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.API\\SharingCsm.Library.Api.csproj",
+        "projectUniqueName": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.API/SharingCsm.Library.Api.csproj",
         "projectName": "SharingCsm.Library.Api",
-        "projectPath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.API\\SharingCsm.Library.Api.csproj",
-        "packagesPath": "C:\\Users\\aartaud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.API\\obj\\",
+        "projectPath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.API/SharingCsm.Library.Api.csproj",
+        "packagesPath": "/Users/antoninartaud/.nuget/packages/",
+        "outputPath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.API/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\aartaud\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/antoninartaud/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\aartaud\\source\\repos\\Mnca\\Librairies\\framework\\src\\Mnca.Abp.Rhm\\bin\\Debug": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\host\\SharingCsm.Library.ServiceDefaults\\SharingCsm.Library.ServiceDefaults.csproj": {
-                "projectPath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\host\\SharingCsm.Library.ServiceDefaults\\SharingCsm.Library.ServiceDefaults.csproj"
+              "/Users/antoninartaud/Dev/SharingCSM.Library/src/host/SharingCsm.Library.ServiceDefaults/SharingCsm.Library.ServiceDefaults.csproj": {
+                "projectPath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/host/SharingCsm.Library.ServiceDefaults/SharingCsm.Library.ServiceDefaults.csproj"
               },
-              "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Application\\SharingCsm.Library.Application.csproj": {
-                "projectPath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Application\\SharingCsm.Library.Application.csproj"
+              "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Application/SharingCsm.Library.Application.csproj": {
+                "projectPath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Application/SharingCsm.Library.Application.csproj"
               },
-              "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Infrastructure\\SharingCsm.Library.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Infrastructure\\SharingCsm.Library.Infrastructure.csproj"
+              "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Infrastructure/SharingCsm.Library.Infrastructure.csproj": {
+                "projectPath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Infrastructure/SharingCsm.Library.Infrastructure.csproj"
               }
             }
           }
@@ -570,7 +556,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
@@ -618,7 +604,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -1036,41 +1022,34 @@
         }
       }
     },
-    "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Application\\SharingCsm.Library.Application.csproj": {
+    "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Application/SharingCsm.Library.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Application\\SharingCsm.Library.Application.csproj",
+        "projectUniqueName": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Application/SharingCsm.Library.Application.csproj",
         "projectName": "SharingCsm.Library.Application",
-        "projectPath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Application\\SharingCsm.Library.Application.csproj",
-        "packagesPath": "C:\\Users\\aartaud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Application\\obj\\",
+        "projectPath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Application/SharingCsm.Library.Application.csproj",
+        "packagesPath": "/Users/antoninartaud/.nuget/packages/",
+        "outputPath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Application/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\aartaud\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/antoninartaud/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\aartaud\\source\\repos\\Mnca\\Librairies\\framework\\src\\Mnca.Abp.Rhm\\bin\\Debug": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Domain\\SharingCsm.Library.Domain.csproj": {
-                "projectPath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Domain\\SharingCsm.Library.Domain.csproj"
+              "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Domain/SharingCsm.Library.Domain.csproj": {
+                "projectPath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Domain/SharingCsm.Library.Domain.csproj"
               },
-              "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Infrastructure\\SharingCsm.Library.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Infrastructure\\SharingCsm.Library.Infrastructure.csproj"
+              "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Infrastructure/SharingCsm.Library.Infrastructure.csproj": {
+                "projectPath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Infrastructure/SharingCsm.Library.Infrastructure.csproj"
               }
             }
           }
@@ -1085,7 +1064,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
@@ -1122,7 +1101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1400,30 +1379,23 @@
         }
       }
     },
-    "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Domain\\SharingCsm.Library.Domain.csproj": {
+    "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Domain/SharingCsm.Library.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Domain\\SharingCsm.Library.Domain.csproj",
+        "projectUniqueName": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Domain/SharingCsm.Library.Domain.csproj",
         "projectName": "SharingCsm.Library.Domain",
-        "projectPath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Domain\\SharingCsm.Library.Domain.csproj",
-        "packagesPath": "C:\\Users\\aartaud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Domain\\obj\\",
+        "projectPath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Domain/SharingCsm.Library.Domain.csproj",
+        "packagesPath": "/Users/antoninartaud/.nuget/packages/",
+        "outputPath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Domain/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\aartaud\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/antoninartaud/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\aartaud\\source\\repos\\Mnca\\Librairies\\framework\\src\\Mnca.Abp.Rhm\\bin\\Debug": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -1442,7 +1414,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
@@ -1463,7 +1435,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1741,38 +1713,31 @@
         }
       }
     },
-    "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Infrastructure\\SharingCsm.Library.Infrastructure.csproj": {
+    "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Infrastructure/SharingCsm.Library.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Infrastructure\\SharingCsm.Library.Infrastructure.csproj",
+        "projectUniqueName": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Infrastructure/SharingCsm.Library.Infrastructure.csproj",
         "projectName": "SharingCsm.Library.Infrastructure",
-        "projectPath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Infrastructure\\SharingCsm.Library.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\aartaud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Infrastructure\\obj\\",
+        "projectPath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Infrastructure/SharingCsm.Library.Infrastructure.csproj",
+        "packagesPath": "/Users/antoninartaud/.nuget/packages/",
+        "outputPath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Infrastructure/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\aartaud\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/antoninartaud/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\aartaud\\source\\repos\\Mnca\\Librairies\\framework\\src\\Mnca.Abp.Rhm\\bin\\Debug": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Domain\\SharingCsm.Library.Domain.csproj": {
-                "projectPath": "C:\\Users\\aartaud\\source\\repos\\CSM\\SharingCsm.Library\\src\\SharingCsm.Library.Domain\\SharingCsm.Library.Domain.csproj"
+              "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Domain/SharingCsm.Library.Domain.csproj": {
+                "projectPath": "/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Domain/SharingCsm.Library.Domain.csproj"
               }
             }
           }
@@ -1787,7 +1752,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
@@ -1832,7 +1797,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

@@ -1,11 +1,11 @@
-
+using System.Text.Json.Serialization;
 using SharingCsm.Library.Api.Exceptions;
 using SharingCsm.Library.Application;
 using SharingCsm.Library.Infrastructure;
 
-namespace SharingCsm.Library.API
+namespace SharingCsm.Library.Api
 {
-	public static class Program
+	public abstract class Program
 	{
 		public static async Task Main(string[] args)
 		{
@@ -13,7 +13,9 @@ namespace SharingCsm.Library.API
 
 			builder.AddServiceDefaults();
 
-			builder.Services.AddControllers();
+			builder.Services.AddControllers()
+				.AddJsonOptions(options => options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()));
+			
 			builder.Services.AddOpenApi();
 
 			builder.Services.AddExceptionHandler<GlobalExceptionHandler>();

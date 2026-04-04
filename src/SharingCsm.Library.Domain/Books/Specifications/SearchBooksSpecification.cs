@@ -11,15 +11,15 @@ public sealed class SearchBooksSpecification : Specification<Book>
 	private readonly BookCategory _category;
 	private readonly bool _onlyAvailable;
 
-	public SearchBooksSpecification(string searchTerm, BookCategory category, bool onlyAvailable)
+	public SearchBooksSpecification(string? searchTerm, BookCategory? category, bool onlyAvailable = true)
 	{
-		_searchTerm = searchTerm;
-		_category = category;
+		_searchTerm = searchTerm ?? string.Empty;
+		_category = category ?? BookCategory.Unknown;
 		_onlyAvailable = onlyAvailable;
 	}
 
 	public override Expression<Func<Book, bool>> ToExpression() => book =>
-			(string.IsNullOrWhiteSpace(_searchTerm) || book.Title.Contains(_searchTerm)) ||
-			(book.Category == _category) &&
-			(!_onlyAvailable || book.IsAvailable);
+		(string.IsNullOrWhiteSpace(_searchTerm) || book.Title.Contains(_searchTerm)) &&
+		(_category == BookCategory.Unknown || book.Category == _category) &&
+    	(!_onlyAvailable || book.IsAvailable);
 }

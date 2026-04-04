@@ -15,7 +15,7 @@ public class SharingCsm_Library_Api : global::Aspire.Hosting.IProjectMetadata
     /// <summary>
     /// The path to the SharingCsm_Library_Api project.
     /// </summary>
-    public string ProjectPath => """C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\SharingCsm.Library.API\SharingCsm.Library.Api.csproj""";
+    public string ProjectPath => """/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.API/SharingCsm.Library.Api.csproj""";
 
     /// <summary>
     /// Gets a value indicating whether building the project before running it should be suppressed.
