@@ -1,16 +1,26 @@
-﻿namespace SharingCsm.Library.Domain.Books.Entities;
+﻿using SharingCsm.Library.Domain.Books.ValueObjects;
+
+namespace SharingCsm.Library.Domain.Books.Entities;
 
 public class Loan
 {
-	public Guid Id { get; private set; }
-	public Guid BookId { get; private set; }
+	public LoanId Id { get; private set; }
+	public BookId BookId { get; private set; }
 	public Guid UserId { get; private set; }
 	public DateTime DueDate { get; private set; }
 	public DateTime? ReturnedDate { get; private set; }
 
-	internal Loan(Guid bookId, Guid userId, DateTime dueDate)
+	private Loan()
 	{
-		Id = Guid.NewGuid();
+		Id = null!;
+		BookId = null!;
+		UserId = Guid.Empty;
+		DueDate = DateTime.MinValue;
+	}
+	
+	internal Loan(BookId bookId, Guid userId, DateTime dueDate)
+	{
+		Id = LoanId.Create(Guid.NewGuid());
 		BookId = bookId;
 		UserId = userId;
 		DueDate = dueDate;

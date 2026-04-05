@@ -1,6 +1,7 @@
 ﻿using Mediator;
 using SharingCsm.Library.Domain.Books.Exceptions;
 using SharingCsm.Library.Domain.Books.Repositories;
+using SharingCsm.Library.Domain.Books.ValueObjects;
 
 namespace SharingCsm.Library.Application.Books.Handlers;
 
@@ -21,11 +22,13 @@ public sealed class ReturnBookCommandHandler : ICommandHandler<ReturnBookCommand
 
 	public async ValueTask<Unit> Handle(ReturnBookCommand request, CancellationToken cancellationToken)
 	{
-		var loan = await _loanRepository.GetByIdAsync(request.LoanId, cancellationToken);
+		var loanId = LoanId.Create(request.LoanId);
+		
+		var loan = await _loanRepository.GetByIdAsync(loanId, cancellationToken);
 
 		if (loan is null || loan.ReturnedDate.HasValue)
 		{
-			throw new LoanNotFoundOrAlreadyReturnedException(request.LoanId);
+			throw new LoanNotFoundOrAlreadyReturnedException(loanId);
 		}
 
 		var book = await _bookRepository.GetByIdAsync(loan.BookId, cancellationToken)

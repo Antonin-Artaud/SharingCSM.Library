@@ -12,7 +12,7 @@ public static class Program
 
 		builder.Services.AddHostedService<Worker>();
 
-		builder.AddNpgsqlDbContext<UnitOfWork>("LibraryDb");
+		builder.AddNpgsqlDbContext<UnitOfWork>("library-database");
 
 		var host = builder.Build();
 

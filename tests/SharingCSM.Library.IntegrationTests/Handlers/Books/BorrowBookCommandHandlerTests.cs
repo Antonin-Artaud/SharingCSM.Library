@@ -40,8 +40,8 @@ public class BorrowBookCommandHandlerTests : IntegrationTestBase
 
         // Vérification de l'emprunt
         createdLoan.ShouldNotBeNull("L'emprunt doit être sauvegardé en base de données");
-        createdLoan!.UserId.ShouldBe(userId);
-        createdLoan.BookId.ShouldBe(book.Id.Value);
+        createdLoan.UserId.ShouldBe(userId);
+        createdLoan.BookId.ShouldBe(book.Id);
         createdLoan.ReturnedDate.ShouldBeNull("Un nouvel emprunt ne peut pas être déjà retourné");
     }
 

@@ -18,7 +18,8 @@ internal sealed class BookConfiguration : IEntityTypeConfiguration<Book>
 			.HasConversion(
 				bookId => bookId.Value,
 				guidValue => BookId.Create(guidValue)
-			);
+			)
+			.IsRequired();
 
 		builder.Property(x => x.Title)
 			.IsRequired()

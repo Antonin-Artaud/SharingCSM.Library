@@ -30,8 +30,8 @@ public class SearchBooksQueryHandlerTests : IntegrationTestBase
 
         // On demande la Page 2, avec une taille de 2 éléments
         var query = new SearchBooksQuery(
-            SearchTerm: null, 
-            Category: null, 
+            SearchTerm: string.Empty, 
+            Category: BookCategory.Unknown, 
             OnlyAvailable: false, 
             Page: 2, 
             PageSize: 2);
@@ -72,6 +72,7 @@ public class SearchBooksQueryHandlerTests : IntegrationTestBase
         await SeedAvailableBookAsync("Harry Potter", BookCategory.Fantasy);
         await SeedAvailableBookAsync("Le Seigneur des Anneaux", BookCategory.Fantasy);
         await SeedAvailableBookAsync("Dune", BookCategory.SciFi); // Ne doit pas matcher
+        await SeedAvailableBookAsync("Dune 2", BookCategory.SciFi); // Ne doit pas matcher
         
         // Emprunt d'un livre (il devient indisponible)
         var userId = Guid.NewGuid();

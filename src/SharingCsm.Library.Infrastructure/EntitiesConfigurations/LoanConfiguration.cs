@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SharingCsm.Library.Domain.Books.Entities;
+using SharingCsm.Library.Domain.Books.ValueObjects;
 
 namespace SharingCsm.Library.Infrastructure.EntitiesConfigurations;
 
@@ -12,8 +13,19 @@ internal sealed class LoanConfiguration : IEntityTypeConfiguration<Loan>
 
 		builder.HasKey(x => x.Id);
 
+		builder.Property(x => x.Id)
+			.IsRequired()
+			.HasConversion(
+				bookId => bookId.Value,
+				guidValue => LoanId.Create(guidValue)
+			);
+
 		builder.Property(x => x.BookId)
-			.IsRequired();
+			.IsRequired()
+			.HasConversion(
+				bookId => bookId.Value,
+				guidValue => BookId.Create(guidValue)
+			);
 
 		builder.Property(x => x.UserId)
 			.IsRequired();

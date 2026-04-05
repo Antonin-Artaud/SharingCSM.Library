@@ -1,0 +1,7 @@
+﻿services:
+  sharingcsm.library.apphost:
+    image: sharingcsm.library.apphost
+    build:
+      context: .
+      dockerfile: src/host/SharingCsm.Library.AppHost/Dockerfile
+

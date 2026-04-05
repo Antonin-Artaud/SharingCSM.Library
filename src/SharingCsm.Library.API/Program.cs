@@ -38,7 +38,7 @@ namespace SharingCsm.Library.Api
 			app.UseHttpsRedirection();
 
 			app.MapControllers();
-
+			
 			await app.RunAsync();
 		}
 	}

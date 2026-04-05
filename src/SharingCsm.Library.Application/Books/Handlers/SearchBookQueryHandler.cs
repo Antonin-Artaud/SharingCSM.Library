@@ -9,7 +9,7 @@ namespace SharingCsm.Library.Application.Books.Handlers;
 
 public sealed record SearchBooksQuery(
 	string SearchTerm,
-	BookCategory? Category,
+	BookCategory Category,
 	bool OnlyAvailable,
 	int Page = 1,
 	int PageSize = 20) : IQuery<PagedResult<BookSearchResponse>>;
@@ -27,8 +27,7 @@ public sealed class SearchBooksQueryHandler : IQueryHandler<SearchBooksQuery, Pa
 		var result = await _bookQueryService.SearchBooksAsync(spec, request.Page, request.PageSize, cancellationToken);
 
 		var items = result.Items.Select(b => new BookSearchResponse(b.Id, b.Title, b.Category, b.IsAvailable)).ToList();
-		var totalCount = result.TotalCount;
 
-		return new PagedResult<BookSearchResponse>(items, totalCount, request.Page, request.PageSize);
+		return new PagedResult<BookSearchResponse>(items, result.TotalCount, request.Page, request.PageSize);
 	}
 }

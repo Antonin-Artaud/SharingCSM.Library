@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Mediator;
 using SharingCsm.Library.Application.Books.Handlers;
 using SharingCsm.Library.Application.Loans.Dtos;
-namespace SharingCsm.Library.Api.Controllers;
 
+namespace SharingCsm.Library.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -12,10 +11,7 @@ public class LoansController : ControllerBase
 {
 	private readonly ISender _sender;
 
-	public LoansController(ISender sender)
-	{
-		_sender = sender;
-	}
+	public LoansController(ISender sender) => _sender = sender;
 
 	[HttpPost]
 	public async Task<ActionResult<CreateLoanResponse>> CreateLoan(

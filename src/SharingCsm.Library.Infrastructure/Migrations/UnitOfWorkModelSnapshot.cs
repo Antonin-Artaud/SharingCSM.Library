@@ -47,7 +47,6 @@ namespace SharingCsm.Library.Infrastructure.Migrations
             modelBuilder.Entity("SharingCsm.Library.Domain.Books.Entities.Loan", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
                     b.Property<Guid>("BookId")

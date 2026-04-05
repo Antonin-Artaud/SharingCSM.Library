@@ -51,7 +51,7 @@ public class ImportCatalogFastCommandHandler : ICommandHandler<ImportCatalogFast
 		{
 			await _bookRepository.AddBookAsync(book, cancellationToken);
 		}
-
+		
 		await _unitOfWork.SaveChangesAsync(cancellationToken);
 	}
 }

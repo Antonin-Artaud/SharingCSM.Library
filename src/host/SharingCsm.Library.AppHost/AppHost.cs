@@ -1,4 +1,5 @@
 using Projects;
+using SharingCsm.Library.AppHost.Extensions;
 
 namespace SharingCsm.Library.AppHost;
 
@@ -8,20 +9,12 @@ public abstract class Program
 	{
 		var builder = DistributedApplication.CreateBuilder(args);
 
-		var postgres = builder.AddPostgres("postgres")
-			.WithDataVolume("library-db-data")
-			.WithPgWeb();
+		var infrastructureModule = builder.AddInfrastructureModule();
 
-		var postgresDb = postgres.AddDatabase("LibraryDb");
-
-		var migrations = builder.AddProject<SharingCsm_Library_Infrastructure_MigrationsService>("library-migrations")
-			.WaitFor(postgresDb)
-			.WithReference(postgresDb);
-
-		builder.AddProject<SharingCsm_Library_Api>("library-api")
-			.WithReference(postgresDb)
-			.WaitFor(postgresDb)
-			.WaitForCompletion(migrations)
+		builder.AddProject<SharingCsm_Library_Api>(LibraryResourceNames.Api)
+			.WithReference(infrastructureModule.Database)
+			.WaitFor(infrastructureModule.Database)
+			.WaitForCompletion(infrastructureModule.MigrationsService)
 			.WithUrl("/swagger", "Library API Swagger UI");
 
 		await builder.Build().RunAsync();

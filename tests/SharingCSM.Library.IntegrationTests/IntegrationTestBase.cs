@@ -22,7 +22,7 @@ public abstract class IntegrationTestBase : IAsyncLifetime
         _aspireFixture = aspireFixture;
     }
 
-    public Task InitializeAsync()
+    public async Task InitializeAsync()
     {
         _factory = new CustomWebApplicationFactory(_aspireFixture.DbConnectionString);
         
@@ -30,10 +30,10 @@ public abstract class IntegrationTestBase : IAsyncLifetime
         Sender = _scope.ServiceProvider.GetRequiredService<ISender>();
         UnitOfWork = _scope.ServiceProvider.GetRequiredService<UnitOfWork>();
 
-        return Task.CompletedTask;
+        await UnitOfWork.Database.EnsureCreatedAsync();
     }
     
-    protected async Task<Book> SeedAvailableBookAsync(string title = "Livre par défaut", BookCategory category = BookCategory.SciFi)
+    protected async Task<Book> SeedAvailableBookAsync(string title = "Livre par défaut", BookCategory category = BookCategory.Unknown)
     {
         var book = Book.Create(BookId.Create(Guid.NewGuid()), title, category);
         

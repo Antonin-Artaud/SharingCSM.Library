@@ -1,8 +1,9 @@
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using SharingCsm.Library.Api;
+using SharingCsm.Library.AppHost;
 using SharingCsm.Library.Infrastructure.UnitOfWorks;
+using Program = SharingCsm.Library.Api.Program;
 
 namespace SharingCSM.Library.IntegrationTests;
 
@@ -17,7 +18,7 @@ public class CustomWebApplicationFactory : WebApplicationFactory<Program>
 
     protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
-        builder.UseSetting("ConnectionStrings:LibraryDb", _connectionString);
+        builder.UseSetting($"ConnectionStrings:{LibraryResourceNames.Database}", _connectionString);    
         
         builder.ConfigureServices(services =>
         {

@@ -1,5 +1,4 @@
 ﻿using Mediator;
-using SharingCsm.Library.Domain.Books.Entities;
 using SharingCsm.Library.Domain.Books.Exceptions;
 using SharingCsm.Library.Domain.Books.Repositories;
 using SharingCsm.Library.Domain.Books.Specifications;
@@ -7,9 +6,9 @@ using SharingCsm.Library.Domain.Books.ValueObjects;
 
 namespace SharingCsm.Library.Application.Books.Handlers;
 
-public sealed record BorrowBookCommand(Guid BookId, Guid UserId) : ICommand<Guid>;
+public sealed record BorrowBookCommand(Guid BookId, Guid UserId) : ICommand<LoanId>;
 
-public class BorrowBookCommandHandler : ICommandHandler<BorrowBookCommand, Guid>
+public class BorrowBookCommandHandler : ICommandHandler<BorrowBookCommand, LoanId>
 {
 	private readonly IBookRepository _bookRepository;
 
@@ -18,7 +17,7 @@ public class BorrowBookCommandHandler : ICommandHandler<BorrowBookCommand, Guid>
 		_bookRepository = bookRepository;
 	}
 
-	public async ValueTask<Guid> Handle(BorrowBookCommand request, CancellationToken cancellationToken)
+	public async ValueTask<LoanId> Handle(BorrowBookCommand request, CancellationToken cancellationToken)
 	{
 		var bookId = BookId.Create(request.BookId);
 		var isAvailableSpec = new BookAvailableSpecification(bookId);

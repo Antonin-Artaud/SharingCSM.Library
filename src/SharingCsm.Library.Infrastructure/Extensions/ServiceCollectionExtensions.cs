@@ -15,7 +15,7 @@ public static class ServiceCollectionExtensions
 	{
 		public void AddUnitOfWork(IConfiguration configuration)
 		{
-			var connectionString = configuration.GetConnectionString("LibraryDb")
+			var connectionString = configuration.GetConnectionString("library-database")
 								   ?? throw new InvalidOperationException();
 
 			applicationBuilder.AddDbContext<UnitOfWork>(options => options.UseNpgsql(connectionString));

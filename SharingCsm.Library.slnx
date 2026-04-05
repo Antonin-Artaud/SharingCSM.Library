@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="compose.yaml" />
+  </Folder>
   <Folder Name="/src/">
     <Project Path="src/SharingCsm.Library.API/SharingCsm.Library.Api.csproj" />
     <Project Path="src/SharingCsm.Library.Application/SharingCsm.Library.Application.csproj" />

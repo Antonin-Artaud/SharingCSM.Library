@@ -24,7 +24,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SharingCsm.Library.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c80a60abd3efebfe97a432147dc4083510f32ae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+501791c1e066d008b345eef9bf49f70b2828fca8")]
 [assembly: System.Reflection.AssemblyProductAttribute("SharingCsm.Library.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SharingCsm.Library.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
