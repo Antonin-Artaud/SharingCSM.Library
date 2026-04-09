@@ -23,3 +23,16 @@ C:/Users/aartaud/source/repos/CSM/SharingCsm.Library/src/host/SharingCsm.Library
 /Users/antoninartaud/Dev/SharingCSM.Library/src/host/SharingCsm.Library.ServiceDefaults/obj/Debug/net10.0/refint/SharingCsm.Library.ServiceDefaults.dll
 /Users/antoninartaud/Dev/SharingCSM.Library/src/host/SharingCsm.Library.ServiceDefaults/obj/Debug/net10.0/SharingCsm.Library.ServiceDefaults.pdb
 /Users/antoninartaud/Dev/SharingCSM.Library/src/host/SharingCsm.Library.ServiceDefaults/obj/Debug/net10.0/ref/SharingCsm.Library.ServiceDefaults.dll
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\host\SharingCsm.Library.ServiceDefaults\bin\Debug\net10.0\SharingCsm.Library.ServiceDefaults.deps.json
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\host\SharingCsm.Library.ServiceDefaults\bin\Debug\net10.0\SharingCsm.Library.ServiceDefaults.dll
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\host\SharingCsm.Library.ServiceDefaults\bin\Debug\net10.0\SharingCsm.Library.ServiceDefaults.pdb
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\host\SharingCsm.Library.ServiceDefaults\obj\Debug\net10.0\SharingCsm.Library.ServiceDefaults.csproj.AssemblyReference.cache
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\host\SharingCsm.Library.ServiceDefaults\obj\Debug\net10.0\SharingCsm.Library.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\host\SharingCsm.Library.ServiceDefaults\obj\Debug\net10.0\SharingCsm.Library.ServiceDefaults.AssemblyInfoInputs.cache
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\host\SharingCsm.Library.ServiceDefaults\obj\Debug\net10.0\SharingCsm.Library.ServiceDefaults.AssemblyInfo.cs
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\host\SharingCsm.Library.ServiceDefaults\obj\Debug\net10.0\SharingCsm.Library.ServiceDefaults.csproj.CoreCompileInputs.cache
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\host\SharingCsm.Library.ServiceDefaults\obj\Debug\net10.0\SharingCsm.Library.ServiceDefaults.sourcelink.json
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\host\SharingCsm.Library.ServiceDefaults\obj\Debug\net10.0\SharingCsm.Library.ServiceDefaults.dll
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\host\SharingCsm.Library.ServiceDefaults\obj\Debug\net10.0\refint\SharingCsm.Library.ServiceDefaults.dll
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\host\SharingCsm.Library.ServiceDefaults\obj\Debug\net10.0\SharingCsm.Library.ServiceDefaults.pdb
+C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\host\SharingCsm.Library.ServiceDefaults\obj\Debug\net10.0\ref\SharingCsm.Library.ServiceDefaults.dll

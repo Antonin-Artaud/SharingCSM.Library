@@ -1,3 +1,4 @@
+using Aspire.Hosting;
 using Projects;
 using SharingCsm.Library.AppHost.Extensions;
 
@@ -15,6 +16,7 @@ public abstract class Program
 			.WithReference(infrastructureModule.Database)
 			.WaitFor(infrastructureModule.Database)
 			.WaitForCompletion(infrastructureModule.MigrationsService)
+			.WithExternalHttpEndpoints()
 			.WithUrl("/swagger", "Library API Swagger UI");
 
 		await builder.Build().RunAsync();

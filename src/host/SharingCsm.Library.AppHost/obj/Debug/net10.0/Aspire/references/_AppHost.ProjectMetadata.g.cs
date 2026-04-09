@@ -17,5 +17,5 @@ public class SharingCsm_Library_AppHost
     /// <summary>
     /// The path to the Aspire Host project.
     /// </summary>
-    public static string ProjectPath => """/Users/antoninartaud/Dev/SharingCSM.Library/src/host/SharingCsm.Library.AppHost""";
+    public static string ProjectPath => """C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\host\SharingCsm.Library.AppHost""";
 }

@@ -15,7 +15,7 @@ public class SharingCsm_Library_Infrastructure_MigrationsService : global::Aspir
     /// <summary>
     /// The path to the SharingCsm_Library_Infrastructure_MigrationsService project.
     /// </summary>
-    public string ProjectPath => """/Users/antoninartaud/Dev/SharingCSM.Library/src/SharingCsm.Library.Infrastructure.MigrationsService/SharingCsm.Library.Infrastructure.MigrationsService.csproj""";
+    public string ProjectPath => """C:\Users\aartaud\source\repos\CSM\SharingCsm.Library\src\SharingCsm.Library.Infrastructure.MigrationsService\SharingCsm.Library.Infrastructure.MigrationsService.csproj""";
 
     /// <summary>
     /// Gets a value indicating whether building the project before running it should be suppressed.
