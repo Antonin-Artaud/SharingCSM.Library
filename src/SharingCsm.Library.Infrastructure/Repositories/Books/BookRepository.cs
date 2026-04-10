@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SharingCsm.Library.Domain.Books.Entities;
 using SharingCsm.Library.Domain.Books.Repositories;
+using SharingCsm.Library.Domain.Books.ValueObjects;
 using SharingCsm.Library.Domain.Interfaces;
 using SharingCsm.Library.Infrastructure.UnitOfWorks;
 
@@ -12,7 +13,7 @@ internal class BookRepository : IBookRepository
 
 	public BookRepository(UnitOfWork unitOfWork) => _unitOfWork = unitOfWork;
 
-	public async Task<Book?> GetByIdAsync(Guid id, CancellationToken cancellationToken)
+	public async Task<Book?> GetByIdAsync(BookId id, CancellationToken cancellationToken)
 	{
 		return await _unitOfWork.Books
 			.FirstOrDefaultAsync(b => b.Id == id, cancellationToken);

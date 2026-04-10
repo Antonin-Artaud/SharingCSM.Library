@@ -1,4 +1,5 @@
-﻿using SharingCsm.Library.Domain.Books.ValueObjects;
+﻿using SharingCsm.Library.Domain.Books.Exceptions;
+using SharingCsm.Library.Domain.Books.ValueObjects;
 
 namespace SharingCsm.Library.Domain.Books.Entities;
 
@@ -30,7 +31,7 @@ public class Loan
 	{
 		if (ReturnedDate.HasValue)
 		{
-			throw new InvalidOperationException("This loan has already been returned.");
+			throw new LoanNotFoundOrAlreadyReturnedException(Id);
 		}
 
 		ReturnedDate = returnDate;

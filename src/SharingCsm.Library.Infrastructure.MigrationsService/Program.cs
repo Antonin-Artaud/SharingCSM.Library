@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using SharingCsm.Library.Infrastructure.UnitOfWorks;
 
 namespace SharingCsm.Library.Infrastructure.MigrationsService;
@@ -11,7 +12,7 @@ public static class Program
 		builder.Services.AddOpenTelemetry().WithTracing(tracing => tracing.AddSource(Worker.ActivitySourceName));
 
 		builder.Services.AddHostedService<Worker>();
-
+		
 		builder.AddNpgsqlDbContext<UnitOfWork>("library-database");
 
 		var host = builder.Build();

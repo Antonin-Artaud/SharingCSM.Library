@@ -18,7 +18,9 @@ public static class ServiceCollectionExtensions
 			var connectionString = configuration.GetConnectionString("library-database")
 								   ?? throw new InvalidOperationException();
 
-			applicationBuilder.AddDbContext<UnitOfWork>(options => options.UseNpgsql(connectionString));
+			applicationBuilder.AddEntityFrameworkNpgsql()
+				.AddDbContext<UnitOfWork>(options =>
+					options.UseNpgsql(connectionString));
 		}
 
 		public void AddServices()

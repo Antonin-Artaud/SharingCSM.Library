@@ -24,7 +24,6 @@ public sealed class GlobalExceptionHandler : IExceptionHandler
 			case DomainException domainEx:
 				problemDetails.Title = domainEx.ErrorCode;
 				problemDetails.Status = StatusCodes.Status400BadRequest;
-				problemDetails.Detail = domainEx.Message;
 				break;
 			default:
 				problemDetails.Title = "Internal Server Error";

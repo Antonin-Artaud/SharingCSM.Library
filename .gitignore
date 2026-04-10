@@ -539,3 +539,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+.azure

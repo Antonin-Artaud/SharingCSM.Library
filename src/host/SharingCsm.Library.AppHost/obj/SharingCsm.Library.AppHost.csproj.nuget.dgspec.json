@@ -55,14 +55,14 @@
               "version": "[13.2.1, )",
               "autoReferenced": true
             },
+            "Aspire.Hosting.Azure.PostgreSQL": {
+              "target": "Package",
+              "version": "[13.2.1, )"
+            },
             "Aspire.Hosting.Orchestration.osx-arm64": {
               "target": "Package",
               "version": "[13.2.1, )",
               "autoReferenced": true
-            },
-            "Aspire.Hosting.PostgreSQL": {
-              "target": "Package",
-              "version": "[13.2.1, )"
             }
           },
           "imports": [

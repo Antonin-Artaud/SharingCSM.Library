@@ -15,7 +15,8 @@ public abstract class Program
 			.WithReference(infrastructureModule.Database)
 			.WaitFor(infrastructureModule.Database)
 			.WaitForCompletion(infrastructureModule.MigrationsService)
-			.WithUrl("/swagger", "Library API Swagger UI");
+			.WithUrl("/swagger", "Library API Swagger UI")
+			.WithExternalHttpEndpoints();
 
 		await builder.Build().RunAsync();
 	}
