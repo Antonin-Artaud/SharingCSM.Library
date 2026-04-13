@@ -22,18 +22,15 @@ namespace SharingCsm.Library.Api
 			builder.Services.AddProblemDetails();
 
 			builder.Services.AddApplicationModule();
-			builder.Services.AddInfrastructureModule(builder.Configuration);
+			builder.AddInfrastructureModule();
 
 			var app = builder.Build();
 
-			if (app.Environment.IsDevelopment())
+			app.MapOpenApi(); 
+			app.UseSwaggerUI(options =>
 			{
-				app.MapOpenApi(); 
-				app.UseSwaggerUI(options =>
-				{
-					options.SwaggerEndpoint("/openapi/v1.json", "Library API V1");
-				});
-			}
+				options.SwaggerEndpoint("/openapi/v1.json", "Library API V1");
+			});
 
 			app.UseHttpsRedirection();
 

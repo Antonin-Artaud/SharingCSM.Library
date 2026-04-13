@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using SharingCsm.Library.Domain.Books.Repositories;
 using SharingCsm.Library.Infrastructure.Repositories.Books;
 using SharingCsm.Library.Infrastructure.Services.Books;
@@ -11,26 +12,26 @@ namespace SharingCsm.Library.Infrastructure.Extensions;
 
 public static class ServiceCollectionExtensions
 {
-	extension(IServiceCollection applicationBuilder)
+	extension(IHostApplicationBuilder applicationBuilder)
 	{
-		public void AddUnitOfWork(IConfiguration configuration)
+		public void AddUnitOfWork()
 		{
-			var connectionString = configuration.GetConnectionString("library-database")
-								   ?? throw new InvalidOperationException();
-
-			applicationBuilder.AddDbContext<UnitOfWork>(options => options.UseNpgsql(connectionString));
+			applicationBuilder.AddNpgsqlDbContext<UnitOfWork>(connectionName: "library-database");
 		}
+	}
 
+	extension(IServiceCollection services)
+	{
 		public void AddServices()
 		{
-			applicationBuilder.AddScoped<IBookQueryService, BookQueryService>();
-			applicationBuilder.AddScoped<ICatalogImportService, CatalogImportService>();
+			services.AddScoped<IBookQueryService, BookQueryService>();
+			services.AddScoped<ICatalogImportService, CatalogImportService>();
 		}
 
 		public void AddRepository()
 		{
-			applicationBuilder.AddScoped<IBookRepository, BookRepository>();
-			applicationBuilder.AddScoped<ILoanRepository, LoanRepository>();
+			services.AddScoped<IBookRepository, BookRepository>();
+			services.AddScoped<ILoanRepository, LoanRepository>();
 		}
 	}
 }

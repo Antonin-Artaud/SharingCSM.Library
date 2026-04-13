@@ -1,10 +1,11 @@
+using Aspire.Hosting.Azure;
 using Microsoft.Extensions.Hosting;
 using Projects;
 
 namespace SharingCsm.Library.AppHost.Extensions;
 
 public sealed record InfrastructureModule(
-    IResourceBuilder<PostgresDatabaseResource> Database,
+    IResourceBuilder<AzurePostgresFlexibleServerDatabaseResource> Database,
     IResourceBuilder<ProjectResource> MigrationsService
 );
 
@@ -12,13 +13,15 @@ public static class DataInfrastructureExtensions
 {
     public static InfrastructureModule AddInfrastructureModule(this IDistributedApplicationBuilder builder)
     {
-        var postgres = builder.AddPostgres(LibraryResourceNames.Postgres)
-            .WithPgWeb();
-       
-        if (!builder.Environment.IsEnvironment("Testing"))
-        {
-            postgres.WithDataVolume(LibraryResourceNames.PostgresDataVolume);
-        }
+        var postgres = builder
+            .AddAzurePostgresFlexibleServer(LibraryResourceNames.Postgres)
+            .RunAsContainer(container => 
+            {
+                if (!builder.Environment.IsEnvironment("Testing"))
+                {
+                    container.WithDataVolume(LibraryResourceNames.PostgresDataVolume);
+                }
+            });
 
         var database = postgres.AddDatabase(LibraryResourceNames.Database);
 

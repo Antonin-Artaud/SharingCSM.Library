@@ -1,4 +1,3 @@
-using Aspire.Hosting;
 using Projects;
 using SharingCsm.Library.AppHost.Extensions;
 
@@ -12,12 +11,19 @@ public abstract class Program
 
 		var infrastructureModule = builder.AddInfrastructureModule();
 
-		builder.AddProject<SharingCsm_Library_Api>(LibraryResourceNames.Api)
+		var api = builder.AddProject<SharingCsm_Library_Api>(LibraryResourceNames.Api)
 			.WithReference(infrastructureModule.Database)
 			.WaitFor(infrastructureModule.Database)
 			.WaitForCompletion(infrastructureModule.MigrationsService)
+			.WithUrl("/swagger", "Library API Swagger UI")
+			.WithExternalHttpEndpoints();
+
+		builder.AddJavaScriptApp("frontend", "../../../library-ui", "start")
+			.WithReference(api)
+			.WaitFor(api)
+			.WithHttpEndpoint(env: "PORT")
 			.WithExternalHttpEndpoints()
-			.WithUrl("/swagger", "Library API Swagger UI");
+			.PublishAsDockerFile();
 
 		await builder.Build().RunAsync();
 	}

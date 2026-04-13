@@ -1,15 +1,16 @@
-﻿using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using SharingCsm.Library.Infrastructure.Extensions;
 
 namespace SharingCsm.Library.Infrastructure;
 
 public static class LibraryInfrastructureModule
 {
-	public static void AddInfrastructureModule(this IServiceCollection services, IConfiguration configuration)
+	public static void AddInfrastructureModule(this IHostApplicationBuilder applicationBuilder)
 	{
-		services.AddUnitOfWork(configuration);
-		services.AddServices();
-		services.AddRepository();
+		applicationBuilder.AddUnitOfWork();
+
+		applicationBuilder.Services.AddServices();
+		applicationBuilder.Services.AddRepository();
 	}
 }

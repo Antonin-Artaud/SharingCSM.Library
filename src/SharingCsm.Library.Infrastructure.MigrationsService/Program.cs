@@ -1,4 +1,4 @@
-using SharingCsm.Library.Infrastructure.UnitOfWorks;
+using SharingCsm.Library.Infrastructure;
 
 namespace SharingCsm.Library.Infrastructure.MigrationsService;
 
@@ -12,7 +12,7 @@ public static class Program
 
 		builder.Services.AddHostedService<Worker>();
 
-		builder.AddNpgsqlDbContext<UnitOfWork>("library-database");
+		builder.AddInfrastructureModule();
 
 		var host = builder.Build();
 
