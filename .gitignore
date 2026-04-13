@@ -540,3 +540,4 @@ $RECYCLE.BIN/
 *.lnk
 
 .azure
+/src/host/SharingCsm.Library.AppHost/obj/Debug/net10.0/SharingCsm.Library.AppHost.AssemblyInfo.cs
