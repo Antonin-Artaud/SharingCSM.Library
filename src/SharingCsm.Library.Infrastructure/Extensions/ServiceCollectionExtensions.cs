@@ -16,10 +16,21 @@ public static class ServiceCollectionExtensions
 	{
 		public void AddUnitOfWork()
 		{
-			applicationBuilder.AddNpgsqlDbContext<UnitOfWork>(connectionName: "library-database");
+			var connectionString = applicationBuilder.Configuration.GetConnectionString("librarydatabase") 
+			                       ?? throw new InvalidOperationException("Connection string not found.");
+
+			if (!applicationBuilder.Environment.IsDevelopment() && !connectionString.Contains("Ssl Mode", StringComparison.OrdinalIgnoreCase))
+			{
+				connectionString = connectionString.TrimEnd(';') + ";Ssl Mode=Require;";
+			}
+
+			applicationBuilder.AddNpgsqlDbContext<UnitOfWork>("librarydatabase", settings =>
+			{
+				settings.ConnectionString = connectionString;
+			});
 		}
 	}
-
+	
 	extension(IServiceCollection services)
 	{
 		public void AddServices()
@@ -28,7 +39,7 @@ public static class ServiceCollectionExtensions
 			services.AddScoped<ICatalogImportService, CatalogImportService>();
 		}
 
-		public void AddRepository()
+		public void AddRepositories()
 		{
 			services.AddScoped<IBookRepository, BookRepository>();
 			services.AddScoped<ILoanRepository, LoanRepository>();

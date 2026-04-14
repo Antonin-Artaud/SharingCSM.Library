@@ -1,4 +1,4 @@
-using SharingCsm.Library.Infrastructure;
+using SharingCsm.Library.Infrastructure.UnitOfWorks;
 
 namespace SharingCsm.Library.Infrastructure.MigrationsService;
 
@@ -11,8 +11,21 @@ public static class Program
 		builder.Services.AddOpenTelemetry().WithTracing(tracing => tracing.AddSource(Worker.ActivitySourceName));
 
 		builder.Services.AddHostedService<Worker>();
-
-		builder.AddInfrastructureModule();
+		
+		var connectionString = builder.Configuration.GetConnectionString("librarydatabase");
+		
+		if (!builder.Environment.IsDevelopment() && !string.IsNullOrEmpty(connectionString) && !connectionString.Contains("Ssl Mode", StringComparison.OrdinalIgnoreCase))
+		{
+			connectionString = connectionString.TrimEnd(';') + ";Ssl Mode=Require;";
+		}
+		
+		builder.AddNpgsqlDbContext<UnitOfWork>("librarydatabase", settings =>
+		{
+			if (!string.IsNullOrEmpty(connectionString))
+			{
+				settings.ConnectionString = connectionString; 
+			}
+		});
 
 		var host = builder.Build();
 

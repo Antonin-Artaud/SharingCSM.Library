@@ -15,12 +15,10 @@ public static class DataInfrastructureExtensions
     {
         var postgres = builder
             .AddAzurePostgresFlexibleServer(LibraryResourceNames.Postgres)
+            .WithPasswordAuthentication()
             .RunAsContainer(container => 
             {
-                if (!builder.Environment.IsEnvironment("Testing"))
-                {
-                    container.WithDataVolume(LibraryResourceNames.PostgresDataVolume);
-                }
+                container.WithDataVolume(LibraryResourceNames.PostgresDataVolume);
             });
 
         var database = postgres.AddDatabase(LibraryResourceNames.Database);
