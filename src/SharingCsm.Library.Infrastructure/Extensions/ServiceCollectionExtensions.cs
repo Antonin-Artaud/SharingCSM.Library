@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SharingCsm.Library.Domain.Books.Repositories;
 using SharingCsm.Library.Infrastructure.Repositories.Books;
@@ -16,21 +14,10 @@ public static class ServiceCollectionExtensions
 	{
 		public void AddUnitOfWork()
 		{
-			var connectionString = applicationBuilder.Configuration.GetConnectionString("librarydatabase") 
-			                       ?? throw new InvalidOperationException("Connection string not found.");
-
-			if (!applicationBuilder.Environment.IsDevelopment() && !connectionString.Contains("Ssl Mode", StringComparison.OrdinalIgnoreCase))
-			{
-				connectionString = connectionString.TrimEnd(';') + ";Ssl Mode=Require;";
-			}
-
-			applicationBuilder.AddNpgsqlDbContext<UnitOfWork>("librarydatabase", settings =>
-			{
-				settings.ConnectionString = connectionString;
-			});
+			applicationBuilder.AddNpgsqlDbContext<UnitOfWork>("librarydatabase");
 		}
 	}
-	
+
 	extension(IServiceCollection services)
 	{
 		public void AddServices()

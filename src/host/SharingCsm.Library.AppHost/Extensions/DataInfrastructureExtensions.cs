@@ -18,8 +18,11 @@ public static class DataInfrastructureExtensions
             .WithPasswordAuthentication()
             .RunAsContainer(container => 
             {
-                container.WithDataVolume(LibraryResourceNames.PostgresDataVolume);
-            });
+                if (!builder.Environment.IsEnvironment("Testing"))
+				{
+					container.WithDataVolume(LibraryResourceNames.PostgresDataVolume);
+				}
+			});
 
         var database = postgres.AddDatabase(LibraryResourceNames.Database);
 

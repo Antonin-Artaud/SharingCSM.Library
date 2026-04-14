@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SharingCsm.Library.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9338fcb4831fb57aab4884e4ef715750a29b757")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c6d80441e17288e81faebf4c2079d53864aeced")]
 [assembly: System.Reflection.AssemblyProductAttribute("SharingCsm.Library.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SharingCsm.Library.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
